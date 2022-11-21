@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+tml * {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  justify-items: center;
+  gap: 50px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+.cardInativo {
+  width: 300px;
+  height: 400px;
+  filter: saturate(0%);
+  box-shadow: 2px 2px 12px rgba(124, 0, 0, 0.25);
+  border-radius: 50px;
+  
+}
+
+.img {
+  width: 125px;
+  height: 125px;
+  border-radius: 150px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5))
+}
+
+.img2 {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  transform: translateY(165%)
+}
+
+.salario{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aniversario{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  
+
+
+.boxcima {
+  background: linear-gradient(90deg, #76d68b 0%, #49da61 100%);
+  border-radius: 50px 50px 0 0;
+  height: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction:column;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nome{
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 45px;
+}
+.email {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right:  25px;
+  margin-top: -40px;
+}
+
+.delete{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right:  25px;
+  margin-top: -40px;
+}
+
+.escrita1{
+font-size: 15px;  
+margin-left: 40px;
+margin-top: 40px;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+
+}
+
+.escrita2{
+  font-size: 15px;
+  margin-left:  40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:Â bold;
 }
